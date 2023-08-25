@@ -1,12 +1,13 @@
 {
   "name": "wallet-api",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "cross-env NODE_ENV=production node ./bin/server.js",
     "start:dev": "cross-env NODE_ENV=development nodemon ./bin/server.js",
     "lint": "eslint **/*.js",
-    "lint:fix": "eslint --fix **/*.js"
+    "lint:fix": "eslint --fix **/*.js",
+    "deploy": "git push heroku dev:main"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.6.2",
